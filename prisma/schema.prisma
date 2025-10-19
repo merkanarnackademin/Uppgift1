@@ -10,17 +10,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum PostStatus {
-  draft
-  published
-}
-
 model Post {
   id          String     @id @default(cuid())
-  title       String     @db.Text
-  slug        String     @unique @db.Text
-  content     String     @default("") @db.Text
-  status      PostStatus @default(draft)
+  title       String     @default("")
+  slug        String     @unique
+  content     String     @default("")
+  status      String     @default("draft")
   publishedAt DateTime?
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
