@@ -31,16 +31,16 @@ Legend: [ ] not started, [*] in progress, [x] done
 - [ ] Run: npx prisma generate and ensure types are available
 
 ## 5) Validation & Utilities
-- [ ] Install zod
-- [ ] Add lib/validation.ts (zod schemas):
-  - [ ] CreatePost schema: title, optional content, optional slug, optional status (default draft)
-  - [ ] UpdatePost schema: partial of title, content, slug, status
-  - [ ] Pagination/query schema: page, pageSize, q, status filter, sortBy, sortDir, includeTotal
-  - [ ] Error formatting helpers for zod issues
-- [ ] Add lib/slug.ts:
-  - [ ] slugify(title) per rules: lowercase, trim, replace non [a-z0-9]+ with '-', collapse dashes, trim dashes
-  - [ ] ensureUniqueSlug(baseSlug) that appends -2, -3, ... in a transaction
-- [ ] Shared error response helper: jsonError({ code, message, details? })
+- [x] Install zod
+- [x] Add lib/validation.ts (zod schemas):
+  - [x] CreatePost schema: title, optional content, optional slug, optional status (default draft)
+  - [x] UpdatePost schema: partial of title, content, slug, status
+  - [x] Pagination/query schema: page, pageSize, q, status filter, sortBy, sortDir, includeTotal
+  - [x] Error formatting helpers for zod issues
+- [x] Add lib/slug.ts:
+  - [x] slugify(title) per rules: lowercase, trim, replace non [a-z0-9]+ with '-', collapse dashes, trim dashes
+  - [x] ensureUniqueSlug(baseSlug) that appends -2, -3, ... in a transaction
+- [x] Shared error response helper: jsonError({ code, message, details? })
 
 ## 6) API Endpoints (Next.js App Router)
 Base path: /api/posts
