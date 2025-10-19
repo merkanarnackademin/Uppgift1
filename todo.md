@@ -14,9 +14,9 @@ Legend: [ ] not started, [*] in progress, [x] done
 - [x] Add README with quick start instructions
 
 ## 2) Environment & Configuration
-- [ ] Create .env with DATABASE_URL="file:./prisma/dev.db"
-- [ ] Add .env.example with placeholders
-- [ ] Ensure NODE_ENV handling (development|test|production)
+- [x] Create .env with DATABASE_URL="file:./prisma/dev.db"
+- [x] Add .env.example with placeholders
+- [x] Ensure NODE_ENV handling (development|test|production)
 
 ## 3) Database Schema (Prisma + SQLite)
 - [ ] Add prisma/schema.prisma with Post model and PostStatus enum per spec

@@ -35,6 +35,13 @@ npm start
 - prisma/ — Prisma schema and migrations — to be added
 - tests/ — unit & integration tests — to be added
 
+## Environment & Configuration
+
+- Copy .env.example to .env and adjust values as needed
+- DATABASE_URL points to your SQLite database (default: file:./prisma/dev.db)
+- NODE_ENV is normalized by lib/config.ts and typically set by npm scripts
+- In production, you must set DATABASE_URL explicitly; the app will fail fast if it is missing
+
 ## Next Steps
 
 See `todo.md` for the full checklist.
