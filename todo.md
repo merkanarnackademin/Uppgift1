@@ -20,7 +20,7 @@ Legend: [ ] not started, [*] in progress, [x] done
 
 ## 3) Database Schema (Prisma + SQLite)
 - [x] Add prisma/schema.prisma with Post model and PostStatus enum per spec
-- [ ] Run: npx prisma migrate dev --name init (creates prisma/dev.db)
+- [x] Run: npx prisma migrate dev --name init (creates prisma/dev.db)
 - [x] Verify unique index on slug
 - [x] Create optional prisma/seed.ts to add draft and published posts
 - [x] Document DB paths and migration commands in README
@@ -28,7 +28,7 @@ Legend: [ ] not started, [*] in progress, [x] done
 ## 4) Prisma Client Integration
 - [x] Install prisma and @prisma/client
 - [x] Add lib/prisma.ts with PrismaClient singleton reuse
-- [ ] Run: npx prisma generate and ensure types are available
+- [x] Run: npx prisma generate and ensure types are available
 
 ## 5) Validation & Utilities
 - [x] Install zod
@@ -44,24 +44,24 @@ Legend: [ ] not started, [*] in progress, [x] done
 
 ## 6) API Endpoints (Next.js App Router)
 Base path: /api/posts
-- [ ] POST /api/posts (create)
-  - [ ] Validate payload
-  - [ ] Generate slug if missing and ensure uniqueness
-  - [ ] If status=published set publishedAt=now
-  - [ ] Return 201 { post } or 400/409
-- [ ] GET /api/posts (list)
-  - [ ] Support page, pageSize (max 100), q, status, sortBy, sortDir, includeTotal
-  - [ ] Return items and meta when includeTotal=true
-- [ ] GET /api/posts/{id} (read one by id)
-  - [ ] Return 200 { post } or 404
-- [ ] PATCH /api/posts/{id} (update)
-  - [ ] Allow title, slug, content, status
-  - [ ] Maintain slug uniqueness (409 conflict)
-  - [ ] Publishing transitions set/clear publishedAt
-- [ ] DELETE /api/posts/{id}
-  - [ ] Return 204 No Content
-- [ ] (Optional) GET /api/posts/slug/{slug}
-  - [ ] Public route returns only published post or 404
+- [x] POST /api/posts (create)
+  - [x] Validate payload
+  - [x] Generate slug if missing and ensure uniqueness
+  - [x] If status=published set publishedAt=now
+  - [x] Return 201 { post } or 400/409
+- [x] GET /api/posts (list)
+  - [x] Support page, pageSize (max 100), q, status, sortBy, sortDir, includeTotal
+  - [x] Return items and meta when includeTotal=true
+- [x] GET /api/posts/{id} (read one by id)
+  - [x] Return 200 { post } or 404
+- [x] PATCH /api/posts/{id} (update)
+  - [x] Allow title, slug, content, status
+  - [x] Maintain slug uniqueness (409 conflict)
+  - [x] Publishing transitions set/clear publishedAt
+- [x] DELETE /api/posts/{id}
+  - [x] Return 204 No Content
+- [x] (Optional) GET /api/posts/slug/{slug}
+  - [x] Public route returns only published post or 404
 
 ## 7) UI (Optional v1)
 - [ ] Public pages: / (list published with pagination), /posts/[slug]

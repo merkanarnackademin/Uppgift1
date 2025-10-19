@@ -63,7 +63,7 @@ Notes
 - After any schema change, run `npm run prisma:generate`.
 - Import it in API routes/utilities as: `import { prisma } from '@/lib/prisma'`.
 
-## Next Steps
+## API Endpoints\n\nBase path: /api/posts\n- POST /api/posts → create post. Validates payload, generates unique slug, sets publishedAt when status=published. Returns 201 { post } or 400/409.\n- GET /api/posts → list posts with pagination/search/sort. Query: page, pageSize (<=100), q, status (all|draft|published), sortBy, sortDir, includeTotal. Returns { items, meta? }.\n- GET /api/posts/{id} → fetch by id. 200 { post } or 404.\n- PATCH /api/posts/{id} → update title/slug/content/status. Maintains slug uniqueness. Publish/unpublish sets/clears publishedAt. 200 { post } or 400/409/404.\n- DELETE /api/posts/{id} → delete post. 204 or 404 if not found.\n- (Public) GET /api/posts/slug/{slug} → returns only published post by slug, else 404.\n\nError format: { error: { code, message, details? } }\n\n## Next Steps
 
 See `todo.md` for the full checklist.
 - Define Prisma schema and run initial migration
