@@ -63,10 +63,10 @@ Base path: /api/posts
 - [x] (Optional) GET /api/posts/slug/{slug}
   - [x] Public route returns only published post or 404
 
-## 7) UI (Optional v1)
-- [ ] Public pages: / (list published with pagination), /posts/[slug]
-- [ ] Admin pages (no auth): /admin/posts, /admin/posts/new, /admin/posts/[id]
-- [ ] Basic forms for create/edit, toggle publish, delete
+## 7) UI 
+- [x] Public pages: / (list published with pagination), /posts/[slug]
+- [x] Admin pages (no auth): /admin/posts, /admin/posts/new, /admin/posts/[id]
+- [x] Basic forms for create/edit, toggle publish, delete
 
 ## 8) Testing Setup
 - [ ] Choose test runner (Vitest or Jest)
