@@ -26,8 +26,8 @@ Legend: [ ] not started, [*] in progress, [x] done
 - [x] Document DB paths and migration commands in README
 
 ## 4) Prisma Client Integration
-- [ ] Install prisma and @prisma/client
-- [ ] Add lib/prisma.ts with PrismaClient singleton reuse
+- [x] Install prisma and @prisma/client
+- [x] Add lib/prisma.ts with PrismaClient singleton reuse
 - [ ] Run: npx prisma generate and ensure types are available
 
 ## 5) Validation & Utilities

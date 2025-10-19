@@ -7,18 +7,24 @@
     "build": "next build",
     "start": "next start",
     "lint": "echo 'No linter configured yet'",
-    "format": "echo 'No formatter configured yet'"
+    "format": "echo 'No formatter configured yet'",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
     "next": "14.2.5",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "@prisma/client": "^5.20.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "typescript": "5.6.3",
     "@types/node": "20.14.12",
     "@types/react": "18.3.5",
-    "@types/react-dom": "18.3.0"
+    "@types/react-dom": "18.3.0",
+    "prisma": "^5.20.0"
   },
   "engines": {
     "node": ">=18.17.0"

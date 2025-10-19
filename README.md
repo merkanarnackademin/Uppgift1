@@ -48,14 +48,20 @@ Paths
 - Schema: prisma/schema.prisma
 - Dev DB file (default via .env): prisma/dev.db
 
-Common commands (run after installing prisma and @prisma/client in Step 4)
-- npx prisma migrate dev --name init
-- npx prisma db seed
-- npx prisma studio
+Common commands (after installing prisma and @prisma/client)
+- npm run prisma:migrate  # runs `prisma migrate dev`
+- npm run prisma:generate # generates Prisma Client
+- npm run prisma:studio   # opens Prisma Studio
+- npx prisma db seed      # optional, if seed configured
 
 Notes
 - The initial schema defines a Post model with a unique slug and PostStatus enum (draft|published)
 - publishedAt is set when a post is published and cleared when unpublished (handled in API logic)
+
+## Prisma Client Integration
+- We include a Prisma Client singleton at lib/prisma.ts to avoid multiple instances in dev.
+- After any schema change, run `npm run prisma:generate`.
+- Import it in API routes/utilities as: `import { prisma } from '@/lib/prisma'`.
 
 ## Next Steps
 
