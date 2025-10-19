@@ -1,5 +1,7 @@
-import { prisma } from '@/lib/prisma';
+import { PrismaClient } from '@prisma/client';
 import { notFound } from 'next/navigation';
+
+const prisma = new PrismaClient();
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
   const post = await prisma.post.findFirst({ where: { slug: params.slug, status: 'published' } });

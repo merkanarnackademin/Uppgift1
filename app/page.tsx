@@ -1,6 +1,9 @@
 import Link from 'next/link';
-import { prisma } from '@/lib/prisma';
+import { PrismaClient } from '@prisma/client';
 import { notFound } from 'next/navigation';
+
+const prisma = new PrismaClient();
+
 
 function formatDate(d?: Date | null) {
   if (!d) return '';
