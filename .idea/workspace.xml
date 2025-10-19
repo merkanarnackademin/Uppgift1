@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94c683d-b07d-4a91-94c7-7b7b2e0eefa5" name="Changes" comment="Todo list">
+    <list default="true" id="f94c683d-b07d-4a91-94c7-7b7b2e0eefa5" name="Changes" comment="Tasks 2 - Environment &amp; Configuration">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/todo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760885441583</updated>
-      <workItem from="1760885442608" duration="6871000" />
+      <workItem from="1760885442608" duration="7488000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -101,7 +102,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760905589179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tasks 1 - Project Setup">
+      <option name="closed" value="true" />
+      <created>1760906086579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760906086579</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tasks 2 - Environment &amp; Configuration">
+      <option name="closed" value="true" />
+      <created>1760906362088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760906362088</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +129,8 @@
     <MESSAGE value="Requirements with Spec.md" />
     <MESSAGE value="Prompt plan" />
     <MESSAGE value="Todo list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todo list" />
+    <MESSAGE value="Tasks 1 - Project Setup" />
+    <MESSAGE value="Tasks 2 - Environment &amp; Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks 2 - Environment &amp; Configuration" />
   </component>
 </project>

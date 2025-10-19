@@ -1,0 +1,27 @@
+// Prisma schema for Blog Platform (SQLite)
+// See spec.md §4.3 Database Model
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum PostStatus {
+  draft
+  published
+}
+
+model Post {
+  id          String     @id @default(cuid())
+  title       String     @db.Text
+  slug        String     @unique @db.Text
+  content     String     @default("") @db.Text
+  status      PostStatus @default(draft)
+  publishedAt DateTime?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}

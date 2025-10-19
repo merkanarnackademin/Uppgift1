@@ -42,6 +42,21 @@ npm start
 - NODE_ENV is normalized by lib/config.ts and typically set by npm scripts
 - In production, you must set DATABASE_URL explicitly; the app will fail fast if it is missing
 
+## Database (Prisma + SQLite)
+
+Paths
+- Schema: prisma/schema.prisma
+- Dev DB file (default via .env): prisma/dev.db
+
+Common commands (run after installing prisma and @prisma/client in Step 4)
+- npx prisma migrate dev --name init
+- npx prisma db seed
+- npx prisma studio
+
+Notes
+- The initial schema defines a Post model with a unique slug and PostStatus enum (draft|published)
+- publishedAt is set when a post is published and cleared when unpublished (handled in API logic)
+
 ## Next Steps
 
 See `todo.md` for the full checklist.

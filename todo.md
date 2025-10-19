@@ -19,11 +19,11 @@ Legend: [ ] not started, [*] in progress, [x] done
 - [x] Ensure NODE_ENV handling (development|test|production)
 
 ## 3) Database Schema (Prisma + SQLite)
-- [ ] Add prisma/schema.prisma with Post model and PostStatus enum per spec
+- [x] Add prisma/schema.prisma with Post model and PostStatus enum per spec
 - [ ] Run: npx prisma migrate dev --name init (creates prisma/dev.db)
-- [ ] Verify unique index on slug
-- [ ] Create optional prisma/seed.ts to add draft and published posts
-- [ ] Document DB paths and migration commands in README
+- [x] Verify unique index on slug
+- [x] Create optional prisma/seed.ts to add draft and published posts
+- [x] Document DB paths and migration commands in README
 
 ## 4) Prisma Client Integration
 - [ ] Install prisma and @prisma/client
