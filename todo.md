@@ -7,11 +7,11 @@ Use this as a living checklist to track implementation. It’s derived from spec
 Legend: [ ] not started, [*] in progress, [x] done
 
 ## 1) Project Setup
-- [ ] Initialize npm project with TypeScript and Next.js (App Router)
-- [ ] Configure tsconfig.json and next.config.js
-- [ ] Add .gitignore (node_modules, .next, prisma/*.db, .env, coverage, .vercel)
-- [ ] Create base folder structure: app/, app/api/, lib/, prisma/, tests/
-- [ ] Add README with quick start instructions
+- [x] Initialize npm project with TypeScript and Next.js (App Router)
+- [x] Configure tsconfig.json and next.config.js
+- [x] Add .gitignore (node_modules, .next, prisma/*.db, .env, coverage, .vercel)
+- [x] Create base folder structure: app/, app/api/, lib/, prisma/, tests/
+- [x] Add README with quick start instructions
 
 ## 2) Environment & Configuration
 - [ ] Create .env with DATABASE_URL="file:./prisma/dev.db"
